@@ -4,6 +4,15 @@
              xmlns:local="clr-namespace:WpfApp1"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="fonts/#Cairo"/>
+            <Setter Property="Foreground" Value="#eee"/>
+            <Setter Property="HorizontalAlignment" Value="center"/>
+            <Setter Property="VerticalAlignment" Value="center"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="fonts/#Cairo"/>
+        </Style>
     </Application.Resources>
 </Application>

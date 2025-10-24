@@ -18,3 +18,4 @@ C:\Users\mouss\source\repos\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\refint\WpfA
 C:\Users\mouss\source\repos\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.pdb
 C:\Users\mouss\source\repos\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.genruntimeconfig.cache
 C:\Users\mouss\source\repos\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\ref\WpfApp1.dll
+C:\Users\mouss\source\repos\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\App.baml

@@ -7,8 +7,126 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         WindowStyle="None"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        Background="#181735" Icon="/managmentPIc.png">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--UpBar Grid-->
+        <Grid Background="#0f0f2d" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
 
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1"
+                       Text="MMS" 
+                       />
+            <TextBlock Grid.Column="2" 
+                       Text="Settings" 
+                       Foreground="LightGray" 
+                       />
+            <TextBlock Grid.Column="3"
+                       Text="Menu" 
+                       Foreground="LightGray" 
+           />
+            <TextBlock Grid.Column="4"
+                       Text="Reload" 
+                       Foreground="LightGray" 
+           />
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="50" Width="50" Source="/managmentPIc.png"/>
+                    <TextBlock Text="Mahali Managment System" 
+                   FontSize="20"
+                   />
+                </StackPanel>
+                <TextBlock Text="Customize" 
+               FontSize="26"
+               HorizontalAlignment="Left"/>
+                <TextBlock Text="Your" 
+               FontSize="26"
+               HorizontalAlignment="Left"/>
+                <TextBlock Text="Experience" 
+               FontSize="26"
+               HorizontalAlignment="Left"/>
+                <TextBlock Text="This is Just A Simple Training To Made A Modern Design In WPF And Why Not it could be Ny Future Splash Screen, anyways Go Follow Me In GitHub @Moussataal" 
+               FontSize="12"
+               HorizontalAlignment="Left"
+               TextWrapping="Wrap"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+
+                <Button x:Name="btnStart" Content="Start"
+                        FontSize="14" Height="40"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Foreground" Value="#eee"/>
+                            <Setter Property="FontWeight" Value="Medium"/>
+                            <Setter Property="Background" Value="#ff5c77"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#ff6584"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="25" CornerRadius="12" Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="btnRegister" Content="Register"
+                        FontSize="14" Height="40"
+                        Cursor="Hand" Background="#3FFFFFFF">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Foreground" Value="#eee"/>
+                            <Setter Property="FontWeight" Value="Medium"/>
+                            <Setter Property="Background" Value="#3FFFFFFF"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#1FFFFFFF"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="25" CornerRadius="12" Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
