@@ -18,8 +18,20 @@ namespace WpfApp1
     {
         public MainWindow()
         {
-            
             InitializeComponent();
+        }
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            // Example: allow dragging the window
+            if (e.LeftButton == MouseButtonState.Pressed) {
+                this.DragMove();
+            }
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
